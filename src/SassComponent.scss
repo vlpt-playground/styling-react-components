@@ -1,5 +1,7 @@
-@import "./styles/utils";
 .SassComponent {
+  @include media("<1024px") {
+    background: green;
+  }
   display: flex;
   .box {
     background: red; // 일반 CSS 에선 .SassComponent .box 와 마찬가지
